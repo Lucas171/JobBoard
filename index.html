@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Job Board</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <main>
+    <nav class="desktopNoShow showOnMobile n" id="showOnMobile">
+      <ul>
+        <li>Home</li>
+        <li>Browse Jobs</li>
+        <li>Pages</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <nav class="desktopNav">
+      <div class="logo">
+        <img src="images/jobBoardlogo.webp" alt="job Board logo" />
+      </div>
+      <div id="desktopNav" class="noShow">
+        <div>
+          <ul class="middleNav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Browse Jobs</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="rightNav">
+            <li>Log In</li>
+            <li class="postAJob" id="navPostAJobButton">Post A Job</li>
+          </ul>
+        </div>
+      </div>
+      <svg onclick="showNav()" class="navBars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+        class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+        </path>
+      </svg>
+    </nav>
+
+    <div class="mainContent">
+      <h3>4536+ Jobs Listed</h3>
+      <h1>Find Your Dream Job</h1>
+      <p>
+        We provide online instant cash loans with quick approval that suit your
+        term length
+      </p>
+
+      <button class="greenBtn">Upload Your Resume</button>
+    </div>
+  </main>
+
+  <section class="searching">
+    <input type="text" placeholder="Search Keyword" />
+    <select name="country" id="countyList">
+      <option value="" selected>Location</option>
+      <option value="UG">Uganda</option>
+      <option value="UA">Ukraine</option>
+      <option value="AE">United Arab Emirates</option>
+      <option value="GB">United Kingdom</option>
+      <option value="US">United States</option>
+      <option value="UM">United States Minor Outlying Islands</option>
+    </select>
+    <select name="country" id="countyList">
+      <option value="" selected>Category</option>
+      <option value="UG">Category 1</option>
+      <option value="UA">Category 2</option>
+      <option value="AE">Category 3</option>
+    </select>
+    <button class="firstFindJobBtn greenBtn ">Find Jobs</button>
+    <h3>Popular Search:</h3>
+    <div>
+      <ul>
+        <li>Design & Creative</li>
+        <li>Marketing</li>
+        <li>Administration</li>
+        <li>Teaching & Education</li>
+        <li>Engineering</li>
+        <li>Software & Web</li>
+        <li>Telmarketing</li>
+      </ul>
+    </div>
+  </section>
+  <section class="popularCategories">
+    <h1>Popular Categories</h1>
+    <ul>
+      <li>
+        <h3>Design & Creative</h3>
+        <p><span>50</span> Available Positions</p>
+      </li>
+      <li>
+        <h3>Marketing</h3>
+        <p><span>50</span> Available Positions</p>
+      </li>
+      <li>
+        <h3>Administration</h3>
+        <p><span>50</span> Available Positions</p>
+      </li>
+      <li>
+        <h3>Teaching & Education</h3>
+        <p><span>50</span> Available Positions</p>
+      </li>
+      <li>
+        <h3>Engineering</h3>
+        <p><span>50</span> Available Positions</p>
+      </li>
+      <li>
+        <h3>Software & Web</h3>
+        <p><span>50</span> Available Positions</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="jobListings">
+    <h1 class="jobListingsTitle">Job Listing</h1>
+    <button class="browseMore">Browse More Jobs</button>
+
+    <div class="jobCard">
+      <div class="icon">
+        <img src="images/secondIcon2.svg" alt="">
+      </div>
+      <div class="jobCardDetails">
+        <h1>Software Engineer</h1>
+        <p>California, USA</p>
+        <p>Part-time</p>
+      </div>
+      <div class="applyNowWButton">
+        <div class="applyNow">
+          <button>Apply Now</button>
+        </div>
+        <p class="dateLine">Date Line: 31 Jan 2021</p>
+      </div>
+
+
+    </div>
+    <div class="jobCard">
+      <div class="icon">
+        <img src="images/secondIcon2.svg" alt="">
+      </div>
+      <div class="jobCardDetails">
+        <h1>Digital Marketer</h1>
+        <p>California, USA</p>
+        <p>Part-time</p>
+      </div>
+      <div class="applyNowWButton">
+        <div class="applyNow">
+          <button>Apply Now</button>
+        </div>
+        <p class="dateLine">Date Line: 31 Jan 2021</p>
+      </div>
+
+
+    </div>
+    <div class="jobCard">
+      <div class="icon">
+        <img src="images/secondIcon2.svg" alt="">
+      </div>
+      <div class="jobCardDetails">
+        <h1>Wordpress Devloper</h1>
+        <p>California, USA</p>
+        <p>Part-time</p>
+      </div>
+
+      <div class="applyNowWButton">
+        <div class="applyNow">
+          <button>Apply Now</button>
+        </div>
+        <p class="dateLine">Date Line: 31 Jan 2021</p>
+      </div>
+
+    </div>
+    <div class="jobCard">
+      <div class="icon">
+        <img src="images/secondIcon2.svg" alt="">
+      </div>
+      <div class="jobCardDetails">
+        <h1>Visual Designer</h1>
+        <p>California, USA</p>
+        <p>Part-time</p>
+      </div>
+      <div class="applyNowWButton">
+        <div class="applyNow">
+          <button>Apply Now</button>
+        </div>
+        <p class="dateLine">Date Line: 31 Jan 2021</p>
+      </div>
+
+
+    </div>
+    <div class="jobCard">
+      <div class="icon">
+        <img src="images/secondIcon2.svg" alt="">
+      </div>
+      <div class="jobCardDetails">
+        <h1>Software Engineer</h1>
+        <p>California, USA</p>
+        <p>Part-time</p>
+      </div>
+      <div class="applyNowWButton">
+        <div class="applyNow">
+          <button>Apply Now</button>
+        </div>
+        <p class="dateLine">Date Line: 31 Jan 2021</p>
+      </div>
+
+
+    </div>
+    <div class="jobCard">
+      <div class="icon">
+        <img src="images/secondIcon2.svg" alt="">
+      </div>
+      <div class="jobCardDetails">
+        <h1>Creative Designer</h1>
+        <p>California, USA</p>
+        <p>Part-time</p>
+      </div>
+      <div class="applyNowWButton">
+        <div class="applyNow">
+          <button>Apply Now</button>
+        </div>
+        <p class="dateLine">Date Line: 31 Jan 2021</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="featuredCandidates">
+    <h1>Featured Candidates</h1>
+    <div class="candidateCard">
+      <img src="images/avatarImg.webp" alt="">
+      <p class="candidateName">Markay Jondon</p>
+      <p class="candidateTitle">Software Engineer</p>
+    </div>
+
+  </section>
+
+  <section class="topCompanies">
+    <h1>Top Companies</h1>
+    <button class="browseMore">Browse More Jobs</button>
+    <div class="clr"></div>
+    <div class="topCompanyCard">
+      <div>
+        <img src="images/fifthIcon.svg" alt="">
+      </div>
+      <div class="companyCardDetails">
+        <h3>Snack Studio</h3>
+        <p><span>50</span> Available Positions</p>
+      </div>
+
+    </div>
+    <div class="topCompanyCard">
+      <div>
+        <img src="images/fifthIcon.svg" alt="">
+      </div>
+      <div class="companyCardDetails">
+        <h3>Snack Studio</h3>
+        <p><span>50</span> Available Positions</p>
+      </div>
+
+    </div>
+    <div class="topCompanyCard">
+      <div>
+        <img src="images/fifthIcon.svg" alt="">
+      </div>
+      <div class="companyCardDetails">
+        <h3>Snack Studio</h3>
+        <p><span>50</span> Available Positions</p>
+      </div>
+
+    </div>
+    <div class="topCompanyCard">
+      <div>
+        <img src="images/fifthIcon.svg" alt="">
+      </div>
+      <div class="companyCardDetails">
+        <h3>Snack Studio</h3>
+        <p><span>50</span> Available Positions</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="lookingFor">
+    <div class="aJob">
+      <h3>Looking for an Job?</h3>
+      <p>We provide online instant cash loans with quick approval</p>
+      <button>Browse Jobs</button>
+    </div>
+    <div class="anExpert">
+      <h3>Looking for an expert?</h3>
+      <p>We provide online instant cash loans with quick approval</p>
+      <button class="postAJobButton">Post a Job</button>
+    </div>
+  </section>
+
+  <div class="clr"></div>
+
+  <section class="testimonials">
+    <h1>Testimonials</h1>
+    <div class="clr"></div>
+    <img src="images/testimonalAvatar.webp" alt="">
+    <p>"Working in conjunction with humanitarian aid agencies, we have supported programmers to help alleviate human
+      suffering through animal welfare when people might depend on livestock as their only source of income or food."
+    </p>
+    <p class="signatureBlock">- Larry</p>
+  </section>
+  <div class="clr"></div>
+  <footer>
+    <div class="insideFooter">
+      <div class="logoAndCompanyDetails">
+        <img src="images/jobBoardlogo.webp" alt="">
+        <div class="companyDetails">
+          <p>something@support.com</p>
+          <p>+10 873 672 6782</p>
+          <p>600/D, Green road, NewYork</p>
+        </div>
+      </div>
+
+      <div class="footerList">
+        <ul>
+          <li><span class="footerTitle">Company</span></li>
+          <li>About</li>
+          <li>Pricing</li>
+          <li>Carrier Tips</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+
+      <div class="secondFooterList">
+        <ul>
+          <li><span class="footerTitle">Category</span></li>
+          <li>Design & Art</li>
+          <li>Engineering</li>
+          <li>Sales & Marketing</li>
+          <li>Finance</li>
+        </ul>
+      </div>
+
+      <div class="copyRight">
+        <p>Copyright <a href="https://colorlib.com/preview/#jobboard2">Colorlib</a> </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

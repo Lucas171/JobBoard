@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.clr {
+  clear: both;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+div.logo {
+  display: inline;
+}
+
+div.logo img {
+  padding-top: 20px;
+}
+
+#desktopNav {
+  display: none;
+}
+
+.navBars {
+  width: 30px;
+  color: white;
+  float: right;
+  margin: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.mobileNav {
+  position: absolute;
+  background-color: lightgrey;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  color: black;
+  text-align: center;
+}
+
+.mobileNav li {
+  width: 20%;
+  margin: 10px auto;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.n {
+  display: none;
+}
+
+main {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+main h3 {
+  margin-top: 60px;
+}
+
+main h1 {
+  margin-top: 10px;
+}
+
+main p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+main button.greenBtn {
+
+  color: white;
+  background-color: #02D363;
+  border: 1px solid rgba(99, 99, 99, 0);
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  animation: greenButtonOut .15s ease-out alternate backwards;
+}
+
+main button.greenBtn:hover {
+  animation-name: greenButtonsIn;
+  animation-duration: .15s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes greenButtonsIn {
+  from {
+    color: white;
+    background-color: #02D363;
+    border: 1px solid rgba(99, 99, 99, 0);
+  }
+
+  to {
+    color: #02D363;
+    background-color: rgba(99, 99, 99, 0);
+    border-color: #02D363;
+  }
+}
+
+@keyframes greenButtonOut {
+  to {
+    color: white;
+    background-color: #02D363;
+    border: 1px solid rgba(99, 99, 99, 0);
+  }
+
+  from {
+    color: #02D363;
+    background-color: rgba(99, 99, 99, 0);
+    border-color: #02D363;
+  }
+}
+
+
+.searching {
+  text-align: center;
+}
+
+.searching [type="text"]:nth-child(1) {
+  margin-top: 50px;
+}
+
+.searching [type="text"],
+.searching select {
+  width: 80%;
+  padding: 20px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  background-color: white;
+  color: grey;
+  margin: 20px auto;
+  font-weight: 100;
+  font-size: large;
+
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: '';
+
+}
+
+.searching select {
+  width: 89%;
+}
+
+.searching button {
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid rgba(99, 99, 99, 0);
+  background-color: #02D363;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  animation: greenButtonOut .15s ease-out alternate backwards;
+}
+
+.searching button:hover {
+  animation-name: greenButtonsIn;
+  animation-duration: .15s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+.searching h3 {
+  font-size: 20px;
+  text-align: left;
+  margin: 20px 30px;
+  font-weight: 300;
+
+}
+
+.searching ul {
+  text-align: left;
+  width: 90%;
+  height: 300px;
+  margin: auto;
+}
+
+.searching ul li {
+  border: 1px solid #0a8cff;
+  display: inline-block;
+  margin: 10px 3px;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #0a8cff;
+
+}
+
+section.popularCategories {
+  height: 1000px;
+}
+
+section.popularCategories,
+section.jobListings {
+  background-color: #F6F7FA;
+}
+
+.popularCategories h1,
+.jobListings h1.jobListingsTitle,
+.topCompanies h1 {
+  font-size: 30px;
+  color: #001d38;
+  margin: 20px;
+  font-weight: 300;
+  padding-top: 100px;
+}
+
+.popularCategories ul li {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid rgba(99, 99, 99, 0);
+  animation-name: greenBorderOut;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+
+}
+
+.popularCategories ul li:hover {
+  /* color: #02D363;
+  border: 1px solid #02D363; */
+
+  animation-name: greenBorderIn;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+@keyframes greenBorderIn {
+  from {
+    border: 1px solid rgba(99, 99, 99, 0);
+  }
+
+  to {
+    border: 1px solid #02D363;
+  }
+}
+
+@keyframes greenBorderOut {
+  to {
+    border: 1px solid rgba(99, 99, 99, 0);
+  }
+
+  from {
+    border: 1px solid #02D363;
+  }
+}
+
+
+
+.popularCategories h3,
+.companyCardDetails h3 {
+  margin-bottom: 20px;
+  color: #001d38;
+}
+
+
+.popularCategories span,
+.companyCardDetails span {
+  background-color: #E5F3FF;
+  padding: 5px 10px;
+  color: #0D8CFF;
+  border-radius: 5px;
+}
+
+.popularCategories p {
+  color: grey;
+}
+
+section.jobListings {
+  padding-bottom: 40px;
+}
+
+button.browseMore {
+  padding: 15px 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: #F6F7FA;
+  border: 1px solid #02D363;
+  color: #02D363;
+  font-size: 16px;
+  margin-bottom: 40px;
+  animation-name: greenButtonsIn;
+  animation-duration: .15s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  cursor: pointer;
+
+}
+
+button.browseMore:hover {
+
+  animation: greenButtonOut .15s ease-in alternate forwards;
+
+}
+
+
+
+
+section.jobListings div.jobCard {
+  width: 90%;
+  background-color: #fff;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.jobListings h1.jobListingsTitle {
+  margin-top: 0;
+}
+
+
+
+.jobCard .icon,
+.topCompanyCard img {
+  float: left;
+  margin: 10px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.jobCardDetails {
+  float: left;
+  padding: 20px;
+}
+
+.jobCardDetails h1 {
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+.applyNow {
+  clear: both;
+}
+
+.applyNow button {
+  animation: greenButtonOut .15s ease-out alternate backwards;
+}
+
+.applyNow button:hover {
+  animation-name: greenButtonsIn;
+  animation-duration: .15s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+.applyNow button,
+.aJob button,
+.anExpert button {
+  margin-left: 10px;
+  padding: 15px 20px;
+  background-color: #02D363;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.jobCard p.dateLine {
+  font-style: italic;
+  color: grey;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+.jobCard:last-child {
+  margin-bottom: 200px;
+}
+
+section.featuredCandidates {
+  text-align: center;
+  background-color: #F6F7FA;
+  padding-bottom: 50px;
+}
+
+.featuredCandidates h1,
+.testimonials h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.featuredCandidates .candidateCard {
+  background-color: #fff;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+
+}
+
+.featuredCandidates .candidateCard img {
+  margin: 20px;
+}
+
+.featuredCandidates .candidateCard p.candidateName {
+  font-size: 25px;
+
+}
+
+.featuredCandidates .candidateCard p.candidateTitle {
+  color: grey;
+  padding-bottom: 20px;
+
+}
+
+.topCompanies {
+  background-color: #F6F7FA;
+  padding-bottom: 20px;
+}
+
+.topCompanies h1 {
+  margin-top: 0;
+}
+
+
+.topCompanyCard {
+  background-color: #fff;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.companyCardDetails {
+  clear: both;
+  padding: 10px;
+}
+
+.companyCardDetails p {
+  color: grey;
+  padding-bottom: 15px;
+}
+
+section.lookingFor div.aJob {
+  border-bottom: 1px solid lightgrey;
+}
+
+section.lookingFor div.aJob,
+section.lookingFor div.anExpert {
+  background-color: #2B9BFF;
+  color: white;
+  padding: 0 30px;
+
+}
+
+section.lookingFor div.aJob h3 {
+  margin: 40px 0 20px 0;
+  padding-top: 30px;
+}
+
+section.lookingFor div.anExpert h3 {
+  margin: 0px 0 20px 0;
+  padding-top: 30px;
+}
+
+section.lookingFor div.aJob p,
+section.lookingFor div.anExpert p {
+  margin: 20px 0 20px 0;
+
+}
+
+section.lookingFor button {
+  margin-left: 0px;
+  border: 1px solid rgba(99, 99, 99, 0);
+  margin-bottom: 20px;
+  animation: greenButtonOut .15s ease-out alternate backwards;
+
+}
+
+section.lookingFor button:hover {
+  animation-name: greenButtonsIn;
+  animation-duration: .15s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+
+.testimonials {
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+
+.testimonials p {
+  margin: 10px 0;
+  line-height: 30px;
+}
+
+.testimonials p.signatureBlock {
+  color: grey;
+}
+
+footer {
+  background-color: #001D38;
+  padding: 20px;
+}
+
+footer img {
+  padding: 0 0 20px 0;
+}
+
+footer div.companyDetails {
+  padding: 0 0 20px 0;
+  color: grey;
+  line-height: 30px;
+}
+
+footer div.footerList span,
+footer div.secondFooterList span {
+  font-size: 20px;
+  color: white;
+
+}
+
+footer div.footerList li,
+footer div.secondFooterList li {
+  color: grey;
+  line-height: 30px;
+}
+
+div.copyRight {
+  margin-top: 20px;
+  color: grey;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  .searching [type="text"],
+  .searching select {
+    display: inline;
+    width: 20%;
+    text-align: center;
+
+
+
+  }
+
+  button.firstFindJobBtn {
+    width: 30%;
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  .searching h3 {
+    margin-top: 100px;
+  }
+
+  .searching ul {
+    height: 100px;
+  }
+
+  section.popularCategories {
+    height: 700px;
+    padding-left: 100px;
+  }
+
+  .popularCategories ul {
+    width: 800px;
+    margin: auto;
+  }
+
+  .popularCategories ul li {
+    display: inline-block;
+    padding: 50px;
+
+
+
+  }
+
+  section.jobListings {
+    padding-left: 100px;
+  }
+
+  div.jobCard {
+    display: inline-block;
+    width: 400px;
+
+  }
+
+  .jobCardDetails,
+  img.icon {
+    float: left;
+  }
+
+  .applyNowWButton {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .topCompanies {
+    width: 100%;
+    margin: auto;
+    padding: 20px 50px;
+  }
+
+  .topCompanyCard {
+    clear: both;
+    width: 30%;
+    display: inline-block;
+    margin-left: 10%;
+  }
+
+  .lookingFor div.anExpert,
+  div.aJob {
+    width: 50%;
+    box-sizing: border-box;
+
+
+  }
+
+  section.lookingFor div.anExpert {
+    float: right;
+    margin-bottom: 40px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  section.lookingFor div.anExpert h3 {
+    margin-top: 40px;
+  }
+
+  div.aJob {
+    float: left;
+  }
+
+  .testimonials {
+    width: 700px;
+    padding-bottom: 100px;
+  }
+
+  .testimonials p {
+    padding-top: 55px;
+  }
+
+
+
+
+  .testimonials img {
+    float: left;
+    margin-right: 20px;
+
+  }
+
+  footer {
+    padding: 10px 10%;
+  }
+
+  div.logoAndCompanyDetails {
+    float: left;
+  }
+
+  footer .footerList {
+    float: left;
+    margin-left: 250px;
+  }
+
+  .secondFooterList {
+    clear: both;
+  }
+
+  .insideFooter {
+    width: 600px;
+    margin: auto;
+  }
+
+
+
+}
+
+@media (min-width: 992px) {
+
+  li.postAJob {
+    border: 1px solid rgba(99, 99, 99, 0);
+    background-color: #02D363;
+    padding: 20px 20px;
+    border-radius: 5px;
+
+
+  }
+
+  li.postAJob:hover {
+    animation-name: greenButtonsIn;
+    animation-duration: .15s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    cursor: pointer;
+
+  }
+
+  li#navPostAJobButton {
+    animation: greenButtonOut .15s ease-out alternate backwards;
+  }
+
+  li#navPostAJobButton:hover {
+    animation-name: greenButtonsIn;
+    animation-duration: .15s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    cursor: pointer;
+  }
+
+  div#desktopNav {
+    display: block;
+
+  }
+
+  .desktopNav img {
+    float: left;
+  }
+
+  ul.middleNav {
+    float: left;
+    text-align: center;
+    width: 50%;
+    margin: 40px auto 0 auto;
+    font-size: 16px;
+  }
+
+  ul.middleNav li {
+    margin-left: 20px;
+  }
+
+
+
+  ul.middleNav li a:hover {
+    animation-name: greenLinks;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: .15s;
+    animation-direction: alternate;
+
+  }
+
+  @keyframes greenLinks {
+    from {
+      color: white;
+    }
+
+    to {
+      color: #02D363;
+    }
+  }
+
+  @keyframes greenLinksOut {
+    to {
+      color: white;
+    }
+
+    from {
+      color: #02D363;
+    }
+  }
+
+
+  ul.rightNav {
+    margin-top: 20px;
+  }
+
+  ul.rightNav li {
+    margin-right: 20px;
+    animation: greenLinksOut .15s ease-in alternate forwards;
+
+  }
+
+  ul.rightNav li:hover {
+
+    animation-name: greenLinks;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: .15s;
+    animation-direction: alternate;
+    cursor: pointer;
+
+  }
+
+  ul.rightNav {
+    float: right;
+  }
+
+  nav.desktopNav ul li {
+    display: inline-block;
+  }
+
+  nav.desktopNav ul li a {
+    text-decoration: none;
+    color: white;
+    animation: greenLinksOut .15s ease-in alternate forwards;
+  }
+
+  .navBars {
+    display: none;
+  }
+
+  .mainContent {
+    padding-top: 50px;
+  }
+}
