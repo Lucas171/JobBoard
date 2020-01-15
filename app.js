@@ -1,5 +1,5 @@
-function showNav() {
-  document.getElementById("showOnMobile").classList.toggle("mobileNav");
+$("#showOnMobile").slideUp(1);
 
-  document.getElementById("showOnMobile").classList.toggle("n");
-}
+$(".navBars").click(function showNav() {
+  $("#showOnMobile").slideToggle();
+});
