@@ -703,6 +703,10 @@ div.copyRight {
 
 @media (min-width: 992px) {
 
+  #showOnMobile {
+    visibility: hidden;
+  }
+
   li.postAJob {
     border: 1px solid rgba(99, 99, 99, 0);
     background-color: #02D363;
