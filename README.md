@@ -1,6 +1,6 @@
 # JobBoard
 
-![Job Board website homescreen](images/jobBoard.png "Job Board Image")
+![Job Board website homescreen](images/JobBoard.png "Job Board Image")
 
 [www.JobBoard.com](https://lucas171.github.io/JobBoard/)
 
